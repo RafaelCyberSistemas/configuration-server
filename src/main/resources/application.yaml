@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: rafael-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RafaelCyberSistemas/rafael-config-server
+          #username
+          #password
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
+    
